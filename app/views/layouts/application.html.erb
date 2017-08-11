@@ -1,14 +1,57 @@
 <!DOCTYPE html>
+<html lang="vi">
 <html>
   <head>
-    <title>LaborExport</title>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge,chrome=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title><%= content_for?(:title) ? yield(:title) : "Lao Động Nước Ngoài" %></title>
     <%= csrf_meta_tags %>
+    <%= favicon_link_tag 'favicon.ico', :rel => 'shortcut icon' %>
+    <link rel="stylesheet" media="all" href="http://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,700" />
 
     <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
     <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
   </head>
 
   <body>
+    <header class="cd-header">
+      <div class="cd-logo"><a href="#"><%= image_tag('cd-logo.svg', :alt => 'Logo') %></div>
+
+      <nav>
+        <ul class="cd-secondary-nav">
+          <li><a href="#">Log In</a></li>
+          <li><a href="#">Register</a></li>
+        </ul>
+      </nav> <!-- cd-nav -->
+
+      <a class="cd-primary-nav-trigger" href="javascript:void(0);">
+        <span class="cd-menu-text">Menu</span><span class="cd-menu-icon"></span>
+      </a> <!-- cd-primary-nav-trigger -->
+    </header>
+
+    <nav>
+      <ul class="cd-primary-nav">
+        <li class="cd-label">About us</li>
+
+        <li><a href="#">The team</a></li>
+        <li><a href="#">Our services</a></li>
+        <li><a href="#">Our projects</a></li>
+
+        <li class="cd-label">Work with us</li>
+
+        <li><a href="#">Start a project</a></li>
+        <li><a href="#">Join In</a></li>
+        <li><a href="#">Create an account</a></li>
+
+        <li class="cd-label">Follow us</li>
+        
+        <li class="cd-social cd-facebook"><a href="#">Facebook</a></li>
+        <li class="cd-social cd-instagram"><a href="#">Instagram</a></li>
+        <li class="cd-social cd-dribbble"><a href="#">Dribbble</a></li>
+        <li class="cd-social cd-twitter"><a href="#">Twitter</a></li>
+      </ul>
+    </nav>
     <%= yield %>
   </body>
 </html>
