@@ -19,11 +19,11 @@
 # To learn more, please read the Rails Internationalization guide
 # available at http://guides.rubyonrails.org/i18n.html.
 
-en:
-  common:
-    login: 'Login'
-    register: 'Register'
+vi:
   home:
     index:
-      welcome: 'Welcome To you!'
-      intro: 'This is an intro'
+      welcome: 'Xin chào!'
+      intro: 'Đây là giới thiệu'
+      bold_text:
+        html: '<div style="color:green;">This is bold</div>'
+
