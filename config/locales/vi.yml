@@ -20,10 +20,37 @@
 # available at http://guides.rubyonrails.org/i18n.html.
 
 vi:
+  routes:
+    posts: 'bai-viet'
+    new: 'tao-moi'
+    edit: 'chinh-sua'
+    about: 'gioi-thieu'
+  common:
+    show: 'Xem'
+    edit: 'Sửa'
+    destroy: 'Xóa'
+    back: 'Trở lại'
+  activerecord:
+    models:
+      post: 'Bài viết'
+    attributes:
+      post:
+        title: 'Tiêu đề'
+        body: 'Nội dung'
+  time:
+    formats:
+      own: '%H:%M:%S, ngày %d %B %Y'
   home:
     index:
       welcome: 'Xin chào!'
       intro: 'Đây là giới thiệu'
       bold_text:
         html: '<div style="color:green;">This is bold</div>'
+      new_post: 'Tạo bài viết mới'
+      posts: 'Các bài viết'
+  posts:
+    index:
+      count: '%{count} bài viết'
+    new:
+      title: 'Bài viết mới'  
 
