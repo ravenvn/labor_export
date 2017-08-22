@@ -18,17 +18,15 @@
 body {
     background: #e7ebf2;
     overflow-x: hidden;
-    /*padding-top: 58px;*/
-    font-family: 'Tahoma', sans-serif;
+    font-family: Circular, "Helvetica Neue", Helvetica, Arial, sans-serif;
     color: #000;
-    font-size: 14px;
-    line-height: 20px;
+    font-size: 16px;
+    line-height: 23px;
 }
-/*@media screen and (min-width:768px) and (max-width:1024px) {
-    body {
-        padding-top: 110px;
-    }
-}*/
+h1 {
+  font-size: 32px;
+  font-weight: normal;
+}
 blockquote {
     border-left: 5px solid #00A80C;
     margin-top: 5px;
@@ -192,3 +190,6 @@ table {
   }
 }
 /* End footer */
+.about-img {
+  margin: 0 auto;
+}
