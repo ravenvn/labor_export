@@ -1,0 +1,57 @@
+<div class="row">
+  <div class="col-md-8 col-md-offset-2 col-sm-10 col-sm-offset-1">
+    <div class="panel panel-default panel-auth">
+      <div class="panel-heading">
+        <h1><%= t 'devise.sign_up' %></h1>
+      </div>
+      <div class="panel-body">
+        <%= form_for(resource, as: resource_name, url: registration_path(resource_name), html: {class: 'form-horizontal'}) do |f| %>
+          <%= devise_error_messages! %>
+          <div class="form-group">
+            <div class="col-sm-4">
+              <%= f.label :email %>:
+            </div>
+            <div class="col-sm-6">
+              <%= f.email_field :email, autofocus: true, class: 'form-control' %>
+            </div>
+          </div>
+
+          <div class="form-group">
+            <div class="col-sm-4">
+              <%= f.label :password %>:
+            </div>
+            <div class="col-sm-6">
+              <%= f.password_field :password, autocomplete: "off", class: 'form-control' %>
+            </div>
+          </div>
+
+          <div class="form-group">
+            <div class="col-sm-4">
+              <%= f.label :password_confirmation %>:
+            </div>
+            <div class="col-sm-6">
+              <%= f.password_field :password_confirmation, autocomplete: "off", class: 'form-control' %>
+            </div>
+          </div>
+          <div class="form-group">
+            <div class="col-sm-6 col-sm-offset-4">
+              <%= button_tag type: 'submit', class: 'btn btn-primary pull-right' do %>
+                <i class="fa fa-btn fa-user-plus"></i> <%= t 'devise.sign_up' %>
+              <% end %>
+            </div>
+          </div>
+        <% end %>
+        <div class="form-group">
+          <div class="col-sm-6 col-sm-offset-4">
+            <hr/>
+          </div>
+        </div>
+        <div class="form-group">
+          <div class="col-sm-6 col-sm-offset-4">
+            <%= render "devise/shared/links" %>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
