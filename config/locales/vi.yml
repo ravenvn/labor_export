@@ -48,16 +48,31 @@ vi:
       own: '%H:%M:%S, ngày %d %B %Y'
   errors:
     messages:
-      not_saved: 'không lưu được'
+      not_saved: 'Thông tin không hợp lệ:'
   devise:
     failure:
+      already_authenticated: 'Đã đăng nhập hệ thống!'
       user:
-        not_found_in_database: 'Email không tồn tại.'
+        not_found_in_database: 'E-mail không tồn tại.'
         unauthenticated: 'Chưa đăng nhập'
-    log_in: 'Đăng nhập'
+        invalid: 'Vui lòng nhập E-mail.'
+    registrations:
+      user:
+        signed_up: 'Bạn đã đăng ký tài khoản thành công.'
+    sessions:
+      user:
+        signed_out: 'Bạn đã đăng xuất khỏi hệ thống.'
+        signed_in: 'Bạn đã đăng nhập thành công.'
+    sign_in: 'Đăng nhập'
     sign_up: 'Đăng ký'
+    sign_out: 'Thoát'
     forgot_password: 'Quên mật khẩu?'
     sign_in_with: 'Đăng nhập bằng'
+    reset_password: 'Đặt lại mật khẩu'
+    reset_instructions: 'Gửi hướng dẫn đặt lại mật khẩu'
+    email: 'E-mail'
+    password: 'Mật khẩu'
+    password_confirmation: 'Nhập lại mật khẩu'
   home:
     index:
       welcome: 'Xin chào!'

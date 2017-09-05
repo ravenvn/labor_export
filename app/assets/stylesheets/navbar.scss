@@ -1,0 +1,42 @@
+.navbar-principal {
+  background-color: #fff;
+}
+.navbar-btn {
+  margin-left: 5px;
+}
+.navbar-toggle {
+  background-color: #fff;
+}
+.navbar-default .navbar-brand {
+  padding: 0;
+  margin: 0;
+}
+#class-list {
+  border: none;
+}
+.dropdown-menu.region-menu, .subject-menu {
+  width: 550px;
+}
+.dropdown-menu.experience-menu {
+  width: 500px;
+}
+.dropdown-menu.multi-column .dropdown-menu {
+  display: block !important;
+  position: static !important;
+  margin: 0 !important;
+  border: none !important;
+  box-shadow: none !important;
+}
+.region-title {
+  font-weight: bold;
+  color: #00A80C;
+  padding-left: 10px;
+}
+.top-menu {
+  color: #055699 !important;
+  font-weight: bold;
+}
+.btn-auth {
+  margin-top: 7px;
+  margin-right: 5px;
+}

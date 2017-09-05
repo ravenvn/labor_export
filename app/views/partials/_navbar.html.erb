@@ -39,16 +39,33 @@
                 <li><a href="#"><%= fa_icon "map-marker" %> Lao động có tay nghề</a></li>
             </ul>
         </li>
-        <li>
-          <div class="navbar-btn">
-            <a href="<%= new_user_registration_path %>" class="btn btn-primary"><%= fa_icon "user-plus" %> Đăng ký nhận đơn hàng</a>
-          </div>
-        </li>
-        <li>
-          <div class="navbar-btn">
-            <a href="<%=  new_user_session_path %>" class="btn btn-success"><%= fa_icon "sign-in" %> Đăng nhập</a>
-          </div>
-        </li>
+        <% if user_signed_in? %>
+          <li class="dropdown">
+            <a href="#" class="dropdown-toggle top-menu" data-toggle="dropdown">Tài khoản <i class="fa fa-user"></i></a>
+            <ul class="dropdown-menu" role="menu">
+                <li><a href="#"><%= fa_icon "address-card" %> Cập nhật hồ sơ</a></li>
+                <li><a href="<%= edit_user_registration_path %>"><%= fa_icon "address-book" %> Cập nhật tài khoản</a></li>
+                <li><a href="#"><%= fa_icon "dollar" %> Đơn hàng của bạn</a></li>
+                <li class="divider"></li>
+                <li>
+                  <%= link_to destroy_user_session_path, method: 'delete' do %>
+                    <%= fa_icon 'power-off' %> <%= t 'devise.sign_out' %>
+                  <% end %>
+                </li>
+            </ul>
+          </li>
+        <% else %>
+          <li>
+            <div class="navbar-btn">
+              <a href="<%= new_user_registration_path %>" class="btn btn-primary"><%= fa_icon "user-plus" %> Đăng ký nhận đơn hàng</a>
+            </div>
+          </li>
+          <li>
+            <div class="navbar-btn">
+              <a href="<%=  new_user_session_path %>" class="btn btn-success"><%= fa_icon "sign-in" %> Đăng nhập</a>
+            </div>
+          </li>
+        <% end %>
       </ul>
     </div>
   </div>
