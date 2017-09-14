@@ -25,6 +25,10 @@ vi:
     new: 'tao-moi'
     edit: 'chinh-sua'
     about: 'gioi-thieu'
+    users: 'tai-khoan'
+    sign_in: 'dang-nhap'
+    sign_up: 'dang-ky'
+    password: 'mat-khau'
   common:
     show: 'Xem'
     edit: 'Sửa'
@@ -40,9 +44,18 @@ vi:
         password: 'Mật khẩu'
         password_confirmation: 'Nhập lại mật khẩu'
         remember_me: 'Nhớ mật khẩu?'
+        current_password: 'Mật khẩu hiện tại'
       post:
         title: 'Tiêu đề'
         body: 'Nội dung'
+    errors:
+      messages:
+        taken: 'đã tồn tại.'
+      models:
+        user:
+          attributes:
+            email:
+              not_found: 'không tồn tại'
   time:
     formats:
       own: '%H:%M:%S, ngày %d %B %Y'
@@ -50,6 +63,10 @@ vi:
     messages:
       not_saved: 'Thông tin không hợp lệ:'
   devise:
+    passwords:
+      user:
+        send_instructions: 'E-mail hướng dẫn đặt lại mật khẩu đã được gửi tới hộp thư của bạn. Vui lòng kiểm tra cả trong hộp thư rác.'
+        updated: 'Mật khẩu của bạn đã được cập nhật.'
     failure:
       already_authenticated: 'Đã đăng nhập hệ thống!'
       user:
@@ -63,9 +80,14 @@ vi:
       user:
         signed_out: 'Bạn đã đăng xuất khỏi hệ thống.'
         signed_in: 'Bạn đã đăng nhập thành công.'
+    omniauth_callbacks:
+      user:
+        success: 'Đăng nhập thành công'
+        failure: 'Đăng nhập thất bại.'
     sign_in: 'Đăng nhập'
     sign_up: 'Đăng ký'
     sign_out: 'Thoát'
+    edit: 'Sửa thông tin tài khoản'
     forgot_password: 'Quên mật khẩu?'
     sign_in_with: 'Đăng nhập bằng'
     reset_password: 'Đặt lại mật khẩu'
@@ -73,6 +95,11 @@ vi:
     email: 'E-mail'
     password: 'Mật khẩu'
     password_confirmation: 'Nhập lại mật khẩu'
+    current_password: 'Mật khẩu hiện tại'
+    change_password: 'Đổi mật khẩu'
+    sign_in_with: 'Đăng nhập bằng'
+  profile:
+    edit: 'Sửa hồ sơ cá nhân'
   home:
     index:
       welcome: 'Xin chào!'

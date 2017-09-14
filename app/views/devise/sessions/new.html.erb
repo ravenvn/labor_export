@@ -7,6 +7,8 @@
       <div class="panel-body">
         <%= form_for(resource, as: resource_name, url: session_path(resource_name), html: { class: 'form-horizontal' }) do |f| %>
 
+          <%= render "devise/shared/omnauth" %>
+
           <%= devise_error_messages! %>
 
           <div class="form-group">
