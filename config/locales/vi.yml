@@ -89,7 +89,7 @@ vi:
     sign_out: 'Thoát'
     edit: 'Sửa thông tin tài khoản'
     forgot_password: 'Quên mật khẩu?'
-    sign_in_with: 'Đăng nhập bằng'
+    sign_in_with: 'Kết nối bằng tài khoản'
     reset_password: 'Đặt lại mật khẩu'
     reset_instructions: 'Gửi hướng dẫn đặt lại mật khẩu'
     email: 'E-mail'
@@ -97,7 +97,6 @@ vi:
     password_confirmation: 'Nhập lại mật khẩu'
     current_password: 'Mật khẩu hiện tại'
     change_password: 'Đổi mật khẩu'
-    sign_in_with: 'Đăng nhập bằng'
   profile:
     edit: 'Sửa hồ sơ cá nhân'
   home:
