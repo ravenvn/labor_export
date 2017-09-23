@@ -72,7 +72,7 @@ vi:
       user:
         not_found_in_database: 'E-mail không tồn tại.'
         unauthenticated: 'Chưa đăng nhập'
-        invalid: 'Vui lòng nhập E-mail.'
+        invalid: 'Mật khẩu không đúng.'
     registrations:
       user:
         signed_up: 'Bạn đã đăng ký tài khoản thành công.'
@@ -82,8 +82,9 @@ vi:
         signed_in: 'Bạn đã đăng nhập thành công.'
     omniauth_callbacks:
       user:
-        success: 'Đăng nhập thành công'
+        success: 'Đăng nhập thành công.'
         failure: 'Đăng nhập thất bại.'
+        existed: 'E-mail đã tồn tại. Vui lòng đăng nhập bằng E-mail này.'
     sign_in: 'Đăng nhập'
     sign_up: 'Đăng ký'
     sign_out: 'Thoát'
