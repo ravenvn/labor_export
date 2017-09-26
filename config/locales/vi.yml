@@ -80,11 +80,12 @@ vi:
       user:
         signed_out: 'Bạn đã đăng xuất khỏi hệ thống.'
         signed_in: 'Bạn đã đăng nhập thành công.'
+        already_signed_out: 'Tài khoản đã được thoát ra rồi'
     omniauth_callbacks:
       user:
         success: 'Đăng nhập thành công.'
         failure: 'Đăng nhập thất bại.'
-        existed: 'E-mail đã tồn tại. Vui lòng đăng nhập bằng E-mail này.'
+        existed: 'Dường như bạn đã có tài khoản với E-mail này. Vui lòng đăng nhập.'
     sign_in: 'Đăng nhập'
     sign_up: 'Đăng ký'
     sign_out: 'Thoát'
@@ -98,6 +99,8 @@ vi:
     password_confirmation: 'Nhập lại mật khẩu'
     current_password: 'Mật khẩu hiện tại'
     change_password: 'Đổi mật khẩu'
+  mailer:
+    welcome_subject: 'Chào mừng bạn đến với cổng thông tin việc làm nước ngoài lớn nhất Việt Nam'
   profile:
     edit: 'Sửa hồ sơ cá nhân'
   home:

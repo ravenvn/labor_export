@@ -19,10 +19,8 @@ default: &default
   encoding: unicode
   # For details on connection pooling, see rails configuration guide
   # http://guides.rubyonrails.org/configuring.html#database-pooling
-  # username: <%= ENV['LABOR_EXPORT_DATABASE_USER'] %>
-  # username: <%= ENV['LABOR_EXPORT_DATABASE_USER'] %>
-  username: root
-  password: mickey02
+  username: <%= ENV['LABOR_EXPORT_DATABASE_USER'] %>
+  password: <%= ENV['LABOR_EXPORT_DATABASE_PASSWORD'] %>
   pool: <%= ENV.fetch("RAILS_MAX_THREADS") { 5 } %>
 
 development:
