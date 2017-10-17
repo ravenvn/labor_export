@@ -99,6 +99,9 @@ vi:
     password_confirmation: 'Nhập lại mật khẩu'
     current_password: 'Mật khẩu hiện tại'
     change_password: 'Đổi mật khẩu'
+    mailer:
+      reset_password_instructions:
+        subject: "Hướng dẫn đặt lại mật khẩu"
   mailer:
     welcome_subject: 'Chào mừng bạn đến với cổng thông tin việc làm nước ngoài lớn nhất Việt Nam'
   profile:
