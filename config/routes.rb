@@ -9,5 +9,7 @@ Rails.application.routes.draw do
     devise_for :users, skip: :omniauth_callbacks
 
     get 'about', to: 'home#about'
+
+    get 'users/edit_profile', to: 'users#edit_profile'
   end
 end

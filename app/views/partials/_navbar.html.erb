@@ -43,7 +43,7 @@
           <li class="dropdown">
             <a href="#" class="dropdown-toggle top-menu" data-toggle="dropdown">Tài khoản <i class="fa fa-user"></i></a>
             <ul class="dropdown-menu" role="menu">
-                <li><a href="#"><%= fa_icon "address-card" %> <%= t 'profile.edit' %></a></li>
+                <li><a href="<%= users_edit_profile_path %>"><%= fa_icon "address-card" %> <%= t 'users.edit' %></a></li>
                 <li><a href="<%= edit_user_registration_path %>"><%= fa_icon "address-book" %> <%= t 'devise.edit' %></a></li>
                 <li><a href="#"><%= fa_icon "align-justify" %> Đơn hàng của bạn</a></li>
                 <li class="divider"></li>

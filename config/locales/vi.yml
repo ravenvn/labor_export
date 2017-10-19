@@ -29,6 +29,7 @@ vi:
     sign_in: 'dang-nhap'
     sign_up: 'dang-ky'
     password: 'mat-khau'
+    edit_profile: 'cap-nhat-ho-so'
   common:
     show: 'Xem'
     edit: 'Sửa'
@@ -76,6 +77,12 @@ vi:
     registrations:
       user:
         signed_up: 'Bạn đã đăng ký tài khoản thành công.'
+        updated: 'Tài khoản được cập nhật thành công.'
+        destroyed: 'Tài khoản đã được xóa khỏi hệ thống.'
+      edit:
+        new_password_hint: 'Để trống nếu không muốn đổi mật khẩu'
+        are_you_sure: 'Bạn chắc chắc muốn xóa tài khoản này chứ?'
+        cancel_my_account: 'Xóa tài khoản này'
     sessions:
       user:
         signed_out: 'Bạn đã đăng xuất khỏi hệ thống.'
@@ -89,7 +96,7 @@ vi:
     sign_in: 'Đăng nhập'
     sign_up: 'Đăng ký'
     sign_out: 'Thoát'
-    edit: 'Sửa thông tin tài khoản'
+    edit: 'Cập nhật tài khoản'
     forgot_password: 'Quên mật khẩu?'
     sign_in_with: 'Kết nối bằng tài khoản'
     reset_password: 'Đặt lại mật khẩu'
@@ -99,13 +106,12 @@ vi:
     password_confirmation: 'Nhập lại mật khẩu'
     current_password: 'Mật khẩu hiện tại'
     change_password: 'Đổi mật khẩu'
+    delete: 'Xóa tài khoản'
     mailer:
       reset_password_instructions:
         subject: "Hướng dẫn đặt lại mật khẩu"
   mailer:
     welcome_subject: 'Chào mừng bạn đến với cổng thông tin việc làm nước ngoài lớn nhất Việt Nam'
-  profile:
-    edit: 'Sửa hồ sơ cá nhân'
   home:
     index:
       welcome: 'Xin chào!'
@@ -119,5 +125,7 @@ vi:
       count: '%{count} bài viết'
     new:
       title: 'Bài viết mới'
+  users:
+    edit: 'Cập nhật hồ sơ'
 
 
