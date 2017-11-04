@@ -29,7 +29,8 @@ vi:
     sign_in: 'dang-nhap'
     sign_up: 'dang-ky'
     password: 'mat-khau'
-    edit_profile: 'cap-nhat-ho-so'
+    edit_profile: 'chinh-sua-ho-so'
+    update_profile: 'cap-nhat-ho-so'
   common:
     show: 'Xem'
     edit: 'Sửa'
@@ -46,6 +47,8 @@ vi:
         password_confirmation: 'Nhập lại mật khẩu'
         remember_me: 'Nhớ mật khẩu?'
         current_password: 'Mật khẩu hiện tại'
+        name: 'Họ và Tên'
+        avatar: 'Ảnh đại diện'
       post:
         title: 'Tiêu đề'
         body: 'Nội dung'
@@ -126,6 +129,10 @@ vi:
     new:
       title: 'Bài viết mới'
   users:
-    edit: 'Cập nhật hồ sơ'
+    edit: 'Chỉnh sửa hồ sơ'
+    edit_profile:
+      save: 'Lưu'
+      updated_successful: 'Hồ sơ được cập nhật thành công'
+      name: 'Nhập họ và tên'
 
 

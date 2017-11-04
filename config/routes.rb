@@ -11,5 +11,6 @@ Rails.application.routes.draw do
     get 'about', to: 'home#about'
 
     get 'users/edit_profile', to: 'users#edit_profile'
+    put 'users/update_profile', to: 'users#update_profile'
   end
 end
